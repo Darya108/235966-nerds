@@ -24,7 +24,8 @@
               <h1 class="catalog-title">Магазин готовых шаблонов</h1>
           </div>
       </header>
-      <main class="container">
+      <main>
+          <div class="container">
           <div class="catalog-content">
               <div class="catalog-content-left">
                   <h2>Стоимость:</h2>
@@ -46,7 +47,7 @@
                       </label>
                     <h2>Особенности:</h2>
                       <input type="checkbox" name="slider-block" id="slider-block" checked>
-                          <label for="slider">Слайдер</label>
+                          <label for="slider-block">Слайдер</label>
                       <input type="checkbox" name="features-block" id="features-block">
                           <label for="features-block">Блок преимуществ</label>
                       <input type="checkbox" name="news-block" id="news-block" checked>
@@ -59,25 +60,34 @@
                   </form>
               </div>
               <div class="catalog-content-right">
-                  <h2>Сортировать</h2> <!-- пока не ясно, как реализовать данную конструкцию -->
+                  <h2>Сортировать</h2> 
+                  <div class="filter">
+                      <a class="filter-price">По цене</a>
+                      <a class="filter-type">По типу</a>
+                      <a class="filter-name">По названию</a>
+                      <a class="filter-decrease"><img src="#"></a>
+                      <a class="filter-decrease"><img src="#"></a>
+                  </div>
                   <div class="gallery">
-                      <figure class="gallery-content">
-                      <img src="https://placehold.it">
-                      <img src="https://placehold.it">
-                      <img src="https://placehold.it">
-                      <img src="https://placehold.it">
-                      <img src="https://placehold.it">
-                      <img src="https://placehold.it">
-                      </figure>
-                      <button class="btn gallery-first" type="button">1</button>
-                      <button class="btn gallery-second" type="button">2</button>
-                      <button class="btn gallery-third" type="button">3</button>
-                      <button class="btn gallery-next" type="button">Следующая</button>
+                      <figure><img src="https://placehold.it"></figure>
+                      <figure><img src="https://placehold.it"></figure>
+                      <figure><img src="https://placehold.it"></figure>
+                      <figure><img src="https://placehold.it"></figure>
+                      <figure><img src="https://placehold.it"></figure>
+                      <figure><img src="https://placehold.it"></figure>
+                      </div>
+                  <div class="pagination">
+                      <button class="btn pagination-first" type="button">1</button>
+                      <button class="btn pagination-second" type="button">2</button>
+                      <button class="btn pagination-third" type="button">3</button>
+                      <button class="btn pagination-next" type="button">Следующая</button>
                   </div>
               </div>
           </div>
+          </div>
       </main>
       <footer class="main-footer">
+          <div class="container">
           <section class="contacts">
               <img class="contacts-map" src="https://placehold.it">
               <figure>
@@ -89,12 +99,17 @@
               </figure>
           </section>
           <section class="footer-social">
+              <div class="footer-social-left">
               <a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
               <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
               <a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+              </div>
+              <div class="footer-social-right">
               <b>Давайте дружить, это выгодно!</b>
               <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
           </section>
+          </div>
       </footer>
     </body>
 </html>
