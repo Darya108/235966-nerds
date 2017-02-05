@@ -1,9 +1,87 @@
+html,
+body {
+    min-width: 1680px;
+    min-height: 1750px;
+    margin: 0 auto;
+    background-color: #ffffff;    
+}
+
 body {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
     font-weight: 500;
     font-family: Roboto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  
+}
+
+.container {
+     width: 1440px;
+     margin-left: 0 auto;
+     padding: 0 180px;
+     margin: 0;
+     
+}
+
+.header-top,
+.header-bottom {
+    background-color: #eeeeee;
+}
+
+.header-top {
+    padding-top: 50px;
+}
+
+.index-logo {
+    float: left;
+    width: 160px;
+    
+    /* Только для оформления сетки */
+    min-height: 70px;   
+}
+
+.main-navigation {
+    float: left;
+    width: 540px;
+    
+  /* Только для оформления сетки */
+    min-height: 70px;
+}
+
+.main-navigation li {
+    display: inline-block;
+    
+}
+
+.user-block {
+    float: right;
+    width: 160px;
+   
+  /* Только для оформления сетки */
+    min-height: 70px;
+}
+
+.promo-description {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 415px;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.slider {
+    display: inline-block;
+    width: 760px;
+    height: 415px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1 {
@@ -22,3 +100,83 @@ h2
     font-weight: bold;
     font-family: Roboto;
 }
+
+/* в общем, в хедере я запуталась, если честно, поскольку он отличается от разбора построения сетки в демо-версии
+и еще у меня проблемы с шириной содержимого и тем, чтобы все было по центру браузера */
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+}
+    
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.index-content-left {
+    float: left; 
+    width: 700px;
+    padding: 70px 20px;
+}
+
+.index-content-right {
+    float: left;
+    width: 420px;
+    padding-top: 70px;
+}
+
+.index-content {
+    margin-bottom: 80px;
+}
+
+.partners {
+    width: 1160px;
+    margin-bottom: 80px;
+}
+
+.partners li {
+    display: inline-block;
+}
+
+.footer-social-left {
+    float: left;
+    width: 300px;
+}
+
+.footer-social-right {
+    float: right;
+    width: 600px;
+}
+
+/* Мне стыдно это присылать, но ничего не поделаешь, надо разбираться */
+
+
+/* Каталог */
+
+/* Вопрос: как тут поставить на место навигацию? Изменить название класса? Если он уже использован на главной странице. Думала, что 
+они автоматически поставятся на место и на странице каталога, т.к. уже указано выше в css, но нет о.О , с футером то же самое */
+
+.catalog-content-left {
+    width: 300px;
+    float: left;
+}
+
+.catalog-content-right {
+    width: 800px;
+    float: right;
+}
+
+.catalog-content {
+    margin-bottom: 65px;
+}
+
+.gallery figure {
+    display: inline-block;
+}
+
+/* По непонятным причинам страница каталога вообще не реагирует на изменения */
