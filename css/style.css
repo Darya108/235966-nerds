@@ -149,34 +149,38 @@ h2
 }
 
 .footer-social-right {
-    float: right;
+    float: left;
     width: 600px;
+    
 }
 
-/* Мне стыдно это присылать, но ничего не поделаешь, надо разбираться */
+
 
 
 /* Каталог */
 
-/* Вопрос: как тут поставить на место навигацию? Изменить название класса? Если он уже использован на главной странице. Думала, что 
-они автоматически поставятся на место и на странице каталога, т.к. уже указано выше в css, но нет о.О , с футером то же самое */
 
 .catalog-content-left {
-    width: 300px;
+    width: 260px;
     float: left;
+    margin-right: 100px;
 }
 
 .catalog-content-right {
     width: 800px;
-    float: right;
+    float: left;
+   
 }
 
-.catalog-content {
-    margin-bottom: 65px;
-}
 
-.gallery figure {
+
+figure {
     display: inline-block;
+    width: 360px;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* По непонятным причинам страница каталога вообще не реагирует на изменения */
+
+
