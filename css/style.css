@@ -1,17 +1,11 @@
-html,
 body {
-    min-width: 1680px;
-    min-height: 1750px;
-    margin: 0 auto;
-    background-color: #ffffff;    
-}
-
-body {
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
+    min-width: 1160px;
     font-weight: 500;
-    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    background-color: #ffffff;    
 }
 
 .clearfix::after {
@@ -22,87 +16,231 @@ body {
 }
 
 .container {
-     width: 1440px;
-     margin-left: 0 auto;
+     width: 1160px;
+     margin: 0 auto;
      padding: 0 180px;
-     margin: 0;
+     
      
 }
 
-.header-top,
-.header-bottom {
+.main-header {
+    margin-bottom: 80px;
+    padding-top: 40px;
+    color: #000000;
     background-color: #eeeeee;
-}
-
-.header-top {
-    padding-top: 50px;
 }
 
 .index-logo {
     float: left;
     width: 160px;
-    
-    /* Только для оформления сетки */
-    min-height: 70px;   
+    height: 65px;
+    margin: 0 auto;
 }
 
 .main-navigation {
     float: left;
     width: 540px;
-    
-  /* Только для оформления сетки */
-    min-height: 70px;
+    margin-left: 200px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
 }
 
 .main-navigation li {
     display: inline-block;
-    
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    vertical-align: top;
+    text-transform: uppercase;
 }
+
+.main-navigation a {
+    display: block;
+    padding: 30px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-navigation a:active {
+    text-decoration: underline;
+    text-decoration-color: #fb565a;
+}
+
+/* ВОПРОС: Если в styleguide указано "Активный, находимся на странице", значит, :hover делать не нужно?
+ВОПРОС: Как увеличить расстояние между подчеркиванием и текстом?
+Если все сделано правильно, то оно будет работать при просмотре страницы в браузере локально? Пока что не работает 
+:/  */
 
 .user-block {
     float: right;
-    width: 160px;
-   
-  /* Только для оформления сетки */
-    min-height: 70px;
+    max-width: 160px;
 }
 
-.promo-description {
+.basket {
+    position: relative;
     display: inline-block;
+    padding: 25px 20px;
+    padding-left:
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
     vertical-align: top;
-    width: 320px;
-    height: 415px;
-    margin-right: 20px;
-    margin-left: auto;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+.basket:active {
+    text-decoration: underline;
+    text-decoration-color: #fb565a;
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/basket-icon.png") no-repeat;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 16px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fb565a;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e74246;
+}
+
+.btn:active {
+    color: #e06366;
+    background-color: #d7373b;
+    box-shadow: inset 0 -2px 0 0 #c13135;
+}
+
+/* ВОПРОС: полоску сверху в активном состоянии сделать 
+через box-shadow или же с помощью border-top? */
 
 .slider {
-    display: inline-block;
-    width: 760px;
-    height: 415px;
-    margin-right: auto;
-    margin-left: auto;
+    position: relative;
+    width: 1160px;
+    height: 360px;
+    margin: 0 auto;
 }
 
-h1 {
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls i {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls .active {
+    background: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.slide-text {
+    width: 520px;
+    padding: 30px 0;
+    color: #283136;
+}
+
+.slide-title {
     font-size: 55px;
     line-height: 55px;
-    color: #000000;
-    font-weight: 500;
-    font-family: Roboto;
+    font-weight: 600;
+    color: black;
 }
 
-h2
-   {
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    font-weight: bold;
-    font-family: Roboto;
+.slide .btn {
+    display: block;
+    width: 240px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
 }
 
-/* в общем, в хедере я запуталась, если честно, поскольку он отличается от разбора построения сетки в демо-версии
-и еще у меня проблемы с шириной содержимого и тем, чтобы все было по центру браузера */
+.slide:nth-child(1) {
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.slide:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+ 
+.slide {
+    display: none;
+}
+
+.slide:nth-child(1) {
+    display: block;
+}
+
+.features {
+    margin-bottom: 80px;
+}
 
 .features-item {
     float: left;
@@ -114,33 +252,167 @@ h2
     margin-right: 0;
 }
 
-.features {
-    margin-bottom: 80px;
+.features-name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-green:hover {
+    background-color: #00bc6c;
+}
+
+.btn-green:active {
+    color: #15b16f;
+    background-color: #00aa62;
+    box-shadow: inset 0 -2px 0 0 #009958;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+    background-color: #eab534;
+}
+
+.btn-yellow:active {
+    color: #edc265;
+    background-color: #e5a722;
+    box-shadow: inset 0 -2px 0 0 #ce961f;
+}
+
+.index-content {
+    padding-top: 30px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    color: #000000;
+    background: url("../img/divide.png") no-repeat top,
+        url("../img/divide.png") no-repeat bottom;
+}
+
+/* ВОПРОС: Как здесь сделать красные полосочки у ненумерованного списка? */
+
+.index-content p {
+    padding: 20px 0;
 }
 
 .index-content-left {
     float: left; 
-    width: 700px;
-    padding: 70px 20px;
+    width: 660px;
+    margin-right: 80px;
 }
 
 .index-content-right {
     float: left;
     width: 420px;
-    padding-top: 70px;
 }
 
-.index-content {
+.about-us {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.content-title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.content-logo {
+    margin-bottom: 30px;
+}
+
+.about-us-table th {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.about-us-table td {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 40px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.partners-list {
+    background: url("../img/divide.png") no-repeat bottom;
     margin-bottom: 80px;
 }
 
 .partners {
     width: 1160px;
-    margin-bottom: 80px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .partners li {
     display: inline-block;
+    margin-right: 90px;
+}
+
+.partners li:last-child {
+    margin-right: 0;
+}
+
+/* ВОПРОС: Как задать изменение цвета логотипа партнеров при наведении и активное? */
+
+.contacts {
+    position: relative;
+    margin-bottom: 70px;
+    width: 1440px;
+    height: 416px;
+}
+
+.contacts-map {
+    position: absolute;
+    left: -140px;
+    top: 0;
+    z-index: 1;
+}
+
+.address {
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    padding: 40px 20px 0 20px;
+    width: 260px;
+    height: 260px;
+    background: #ffffff;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.address b {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.address p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    
+}
+
+.address a {
+    margin-top: 30px;
 }
 
 .footer-social-left {
@@ -148,38 +420,243 @@ h2
     width: 300px;
 }
 
-.footer-social-right {
-    float: left;
-    width: 600px;
-    
+.social-btn {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    font-size: 0;
+    background: url("../img/social-sprite.png") no-repeat;
+    background-color: #e1e1e1;
+    vertical-align: middle;
+    border-radius: 40px;
 }
+
+.social-btn:hover {
+    background-color: #e74246;
+}
+
+.social-btn:active {
+    color: #e37376;
+    background-color: #d7373b;
+}
+
+
+
+.social-btn-vk {
+    background-position: 25px 28px;
+}
+
+.social-btn-fb {
+    background-position: -65px 28px;
+}
+
+.social-btn-inst {
+    background-position: -152px 28px; 
+}
+
+.main-footer {
+  margin-bottom: 70px;  
+}
+
+.footer-social-right {
+    float: right;
+    width: 600px;
+}
+
+.footer-social-right p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.call-to-action {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
 
 
 
 
 /* Каталог */
 
+/* ВОПРОС: Хотелось бы понять, по какой причине на странице каталога меню уезжает вниз? */
+
+.header-name {
+ padding-bottom: 110px;   
+}
+
+.catalog-title {
+   font-size: 55px;
+   line-height: 55px;
+   text-align: center;
+}
+
+.catalog-content {
+    margin-bottom: 70px;
+}
+
+.content-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
 
 .catalog-content-left {
-    width: 260px;
+    width: 240px;
     float: left;
-    margin-right: 100px;
+    margin-right: 80px;
 }
+
+,range-filter {
+    width: 240px;
+    margin: 50px auto;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-controls .scale {
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+    left: 155px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #283136;
+    border-radius: 5px;
+}
+
+.price-controls .min-price {
+    margin-right: 14px;
+}
+
+.price-controls {
+    white-space: nowrap;
+}
+
+.catalog-content-left input,
+.catalog-content-left label {
+    display: inline-block;
+}
+
+.catalog-content-left label {
+    width: 220px;
+}
+
+.catalog-btn {
+    display: inline-block;
+    padding: 15px 80px;
+    width: 240px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 2px;
+}
+
 
 .catalog-content-right {
-    width: 800px;
+    width: 820px;
     float: left;
-   
 }
 
+.filter a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+}
 
+.gallery {
+    margin-bottom: 40px;
+}
 
-figure {
+.gallery-item {
     display: inline-block;
     width: 360px;
     vertical-align: middle;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 15px;
+}
+
+.gallery-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pagination {
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+.pagination-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+     width: 50px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 2px;
+}
+
+.pagination-btn:last-child {
+    width: 260px;
+    
 }
 
 
