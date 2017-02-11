@@ -8,10 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="main-header">
-          <div class="header-top">
-          <div class="container clearfix">
-              <div class="main-logo">
+      <header class="main-header catalog-header">
+         <div class="container clearfix">
+              <div class="index-logo">
                   <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
               </div>
               <nav class="main-navigation">
@@ -25,51 +24,38 @@
               <div class="user-block">
                   <a class="basket" href="#">Корзина</a>
               </div>
-              </div>
-              
-              <div class="header-name">
-              
-              <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-              </div>
-              
-             
           </div>
+          
       </header>
       <main>
+          <div class="catalog-name">
+          <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+          </div>
           <div class="container clearfix">
           <div class="catalog-content">
               <div class="catalog-content-left">
                   <form action="/echo" method="post">
-                  <h2 class="content-title">Стоимость:</h2>
+                  <h2 class="catalog-content-title">Стоимость:</h2>
                   <div class="range-filter">
                     <div class="range-controls">
                         <div class="scale"><div style="width:70%;" class="bar"></div></div>
                         <div class="toggle min-toggle"></div>
                         <div class="toggle max-toggle"></div>
-                        
-                        
                     </div>
-                      
                     <div class="price-controls">
                         от <input name="min-price" class="min-price" type="text" value="0">
                         до <input name="max-price" class="max-price" type="text" value="15 000">
                     </div>
                 </div>
-                    <h2 class="content-title">Сетка:</h2>
-                      <label>
-                          <input type="radio" name="design-type" value="adaptive" checked>
-                          Адаптивная
-                      </label>
-                      <label>
-                          <input type="radio" name="design-type" value="fixed" checked>
-                          Фиксированная
-                      </label>
-                      <label>
-                          <input type="radio" name="design-type" value="responsive" checked>
-                          Резиновая
-                      </label>
+                      <h2 class="catalog-content-title">Сетка:</h2>
+                      <input type="radio" name="design-type" id="adaptive" value="adaptive" checked>
+                      <label for="adaptive">Адаптивная</label>
+                      <input type="radio" name="design-type" id="fixed" value="fixed">
+                      <label for="fixed">Фиксированная</label>
+                      <input type="radio" name="design-type" id="responsive" value="responsive">
+                      <label for="responsive">Резиновая</label>
                       
-                     <h2 class="content-title">Особенности:</h2>
+                      <h2 class="catalog-content-title">Особенности:</h2>
                       <input type="checkbox" name="slider-block" id="slider-block" checked>
                           <label for="slider-block">Слайдер</label>
                       <input type="checkbox" name="features-block" id="features-block">
@@ -87,22 +73,69 @@
               </div>
               <div class="catalog-content-right">
                    <form action="/echo" method="post">
-                      <div class="filter">
-                      <h2 class="content-title">Сортировать:</h2>
+                      <div class="filter clearfix">
+                      <div class="filter-left">
+                      <h2 class="catalog-content-title">Сортировать:</h2>
+                      </div>
+                      <div class="filter-right">
                       <a class="filter-price">По цене</a>
                       <a class="filter-type">По типу</a>
                       <a class="filter-name">По названию</a>
-                      <a class="filter-decrease"><img src="#"></a>
-                      <a class="filter-increase"><img src="#"></a>
+                      <a class="filter-decrease"></a>
+                      <a class="filter-increase"></a>
+                          </div>
                        </div>
                     </form>
                    <div class="gallery">
-                      <figure class="gallery-item"><img src="img/sedona-template.jpg"></figure>
-                      <figure class="gallery-item"><img src="img/pink-template.jpg"></figure>
-                      <figure class="gallery-item"><img src="img/barbershop-template.jpg"></figure>
-                      <figure class="gallery-item"><img src="img/mishka-template.jpg"></figure>
-                      <figure class="gallery-item"><img src="img/aplus-template.jpg"></figure>
-                      <figure class="gallery-item"><img src="img/kvast-template.jpg"></figure>
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                              <h2 class="catalog-content-title">Sedona</h2>
+                              <p>Информационный сайт<br> для туристов</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/sedona-template.jpg">
+                       </figure>
+                       
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                              <h2 class="catalog-content-title">Pink App</h2>
+                              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/pink-template.jpg">
+                       </figure>
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                          <h2 class="catalog-content-title">Barbershop</h2>
+                              <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/barbershop-template.jpg">
+                       </figure>
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                              <h2 class="catalog-content-title">Mishka</h2>
+                              <p>Интернет-магазин<br> вязаных игрушек</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/mishka-template.jpg">
+                       </figure>
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                          <h2 class="catalog-content-title">A Plus</h2>
+                              <p>Лендинг курсов повышения<br> квалификации</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/aplus-template.jpg">
+                       </figure>
+                      <figure class="gallery-item">
+                          <div class="gallery-item-info">
+                              <h2 class="catalog-content-title">Кваст</h2>
+                              <p>Промо-сайт производителя<br> крафтового кваса</p>
+                              <button class="btn">9 900 РУБ.</button>
+                          </div>
+                          <img src="img/kvast-template.jpg">
+                       </figure>
                       </div>
                    <div class="pagination">
                       <button class="pagination-btn pagination-first" type="button">1</button>
@@ -112,7 +145,7 @@
                    </div>
               </div>
           </div>
-          </div>
+          </div> 
       </main>
       <footer class="main-footer">
           <div class="container clearfix">

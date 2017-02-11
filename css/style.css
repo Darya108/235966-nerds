@@ -18,13 +18,13 @@ body {
 .container {
      width: 1160px;
      margin: 0 auto;
-     padding: 0 180px;
+     padding: 0 20px;
      
      
 }
 
 .main-header {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     padding-top: 40px;
     color: #000000;
     background-color: #eeeeee;
@@ -37,10 +37,19 @@ body {
     margin: 0 auto;
 }
 
+.index-logo:hover {
+    opacity: 0.5;
+}
+
+.index-logo:active {
+    opacity: 0.2;
+}
+
 .main-navigation {
     float: left;
-    width: 540px;
+    width: 640px;
     margin-left: 200px;
+    
 }
 
 .main-navigation ul {
@@ -61,31 +70,31 @@ body {
 
 .main-navigation a {
     display: block;
-    padding: 30px 20px;
+    padding: 25px 48px;
+    padding-left: 0;
     color: #000000;
     text-decoration: none;
+    text-align: justify;
+}
+
+.main-navigation a:hover {
+    color: #fb565a;
 }
 
 .main-navigation a:active {
-    text-decoration: underline;
-    text-decoration-color: #fb565a;
+    color: #a6a6a6;
 }
-
-/* ВОПРОС: Если в styleguide указано "Активный, находимся на странице", значит, :hover делать не нужно?
-ВОПРОС: Как увеличить расстояние между подчеркиванием и текстом?
-Если все сделано правильно, то оно будет работать при просмотре страницы в браузере локально? Пока что не работает 
-:/  */
 
 .user-block {
     float: right;
-    max-width: 160px;
+    max-width: 120px;
 }
 
 .basket {
     position: relative;
     display: inline-block;
     padding: 25px 20px;
-    padding-left:
+    padding-left: 45px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 600;
@@ -95,19 +104,22 @@ body {
     text-transform: uppercase;
 }
 
-.basket:active {
-    text-decoration: underline;
-    text-decoration-color: #fb565a;
-}
-
 .basket::before {
     content: "";
     position: absolute;
     top: 32px;
-    left: -20px;
+    left: 5px;
     width: 15px;
     height: 15px;
     background: url("../img/basket-icon.png") no-repeat;
+}
+
+.basket:hover {
+    color: #fb565a;
+}
+
+.basket:active {
+    color: #a6a6a6;
 }
 
 
@@ -125,6 +137,7 @@ body {
     text-decoration: none;
     background-color: #fb565a;
     border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -144,13 +157,14 @@ body {
 .slider {
     position: relative;
     width: 1160px;
-    height: 360px;
+    height: 415px;
     margin: 0 auto;
+    
 }
 
 .slider-controls {
     position: absolute;
-    bottom: 95px;
+    bottom: 105px;
     left: 50%;
     width: 200px;
     height: 10px;
@@ -161,18 +175,19 @@ body {
 
 .slider-controls i {
     display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 3px;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px;
     background: white;
-    border: 3px solid white;
+    border: 5px solid white;
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .slider-controls .active {
-    background: #c1c1c1;
+    background: white;
+    box-shadow: inset 0 0 0 2px #c1c1c1;
 }
 
 .slide {
@@ -187,23 +202,32 @@ body {
 
 .slide-text {
     width: 520px;
-    padding: 30px 0;
+    padding: 60px 0;
+    color: #283136;
+}
+
+.slide-text p {
+    font-size: 16px;
+    line-height: 24px;
     color: #283136;
 }
 
 .slide-title {
+    padding-bottom: 10px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 600;
     color: black;
+   
 }
 
 .slide .btn {
     display: block;
     width: 240px;
-    padding: 10px 0;
-    margin-top: 25px;
-    font-size: 12px;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 18px;
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -215,19 +239,19 @@ body {
 .slide:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 430px 2px;
 }
 
 .slide:nth-child(2) {
     background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 430px 2px;
 }
 
 .slide:nth-child(3) {
     background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 430px 2px;
 }
  
 .slide {
@@ -239,13 +263,14 @@ body {
 }
 
 .features {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .features-item {
     float: left;
     width: 300px;
     margin-right: 100px;
+    padding-top: 15px;
 }
     
 .features-item:last-child {
@@ -257,6 +282,12 @@ body {
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.features-item p {
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .btn-green {
@@ -288,7 +319,8 @@ body {
 }
 
 .index-content {
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     margin-bottom: 60px;
     margin-top: 80px;
     color: #000000;
@@ -296,21 +328,46 @@ body {
         url("../img/divide.png") no-repeat bottom;
 }
 
-/* ВОПРОС: Как здесь сделать красные полосочки у ненумерованного списка? */
-
-.index-content p {
-    padding: 20px 0;
-}
-
 .index-content-left {
     float: left; 
     width: 660px;
-    margin-right: 80px;
+    margin-right: 140px;
+}
+
+.index-content-left p {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.index-content-left ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.service {
+    position: relative;
+    padding-left: 40px;
+    display: block;
+    margin-bottom: 15px;
+    
+}
+
+.service::after {
+   position: absolute;
+    content: "";
+    width: 27px;
+    height: 2px;
+    display: block;
+    top: 14px;
+    left: 0;
+    background-color: #fb565a;
 }
 
 .index-content-right {
     float: left;
-    width: 420px;
+    width: 360px;
 }
 
 .about-us {
@@ -322,10 +379,12 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+    
 }
 
-.content-logo {
-    margin-bottom: 30px;
+.about-us-table {
+    width: 347px;
+    border-collapse: collapse;
 }
 
 .about-us-table th {
@@ -334,6 +393,7 @@ body {
     font-weight: bold;
     padding-top: 40px;
     padding-left: 0;
+    padding-right: 20px;
     text-align: left;
 }
 
@@ -342,6 +402,7 @@ body {
     line-height: 18px;
     padding: 40px;
     padding-left: 0;
+    padding-right: 20px;
     text-align: left;
 }
 
@@ -352,49 +413,65 @@ body {
 
 .partners {
     width: 1160px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-left: 0;
     font-size: 0;
     text-align: center;
-    vertical-align: middle;
+    
 }
 
 .partners li {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 90px;
+    opacity: 0.2;
 }
 
 .partners li:last-child {
     margin-right: 0;
 }
 
-/* ВОПРОС: Как задать изменение цвета логотипа партнеров при наведении и активное? */
+.partners li:hover {
+    opacity: 1;
+}
+
+.partners li:active {
+    opacity: 0.1;
+}
+
+.main-footer {
+    position: relative;
+}
 
 .contacts {
-    position: relative;
     margin-bottom: 70px;
     width: 1440px;
     height: 416px;
 }
 
 .contacts-map {
+    max-width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    margin: auto;
     position: absolute;
-    left: -140px;
-    top: 0;
+    top: -185px;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1;
 }
 
 .address {
     position: absolute;
     top: 45px;
-    left: -60px;
+    left: 330px;
     padding: 40px 20px 0 20px;
-    width: 260px;
+    width: 280px;
     height: 260px;
     background: #ffffff;
     text-align: center;
     z-index: 2;
-    
 }
 
 .address b {
@@ -417,14 +494,16 @@ body {
 
 .footer-social-left {
     float: left;
-    width: 300px;
+    width: 330px;
+    margin-right: 60px;
+    
 }
 
 .social-btn {
     display: inline-block;
     width: 80px;
     height: 80px;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 0;
     background: url("../img/social-sprite.png") no-repeat;
     background-color: #e1e1e1;
@@ -461,7 +540,8 @@ body {
 
 .footer-social-right {
     float: right;
-    width: 600px;
+    width: 770px;
+    text-align: left;
 }
 
 .footer-social-right p {
@@ -482,23 +562,29 @@ body {
 
 /* Каталог */
 
-/* ВОПРОС: Хотелось бы понять, по какой причине на странице каталога меню уезжает вниз? */
+.catalog-header {
+    margin-bottom: -35px;
+}
 
-.header-name {
- padding-bottom: 110px;   
+.catalog-name {
+ height: 210px;
+ background-color: #eeeeee; 
+ padding-top: 50px;
 }
 
 .catalog-title {
+   padding-top: 10px;
    font-size: 55px;
    line-height: 55px;
    text-align: center;
 }
 
 .catalog-content {
+    margin-top: -35px;
     margin-bottom: 70px;
 }
 
-.content-title {
+.catalog-content-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -510,10 +596,11 @@ body {
 .catalog-content-left {
     width: 240px;
     float: left;
-    margin-right: 80px;
+    margin-right: 100px;
+    
 }
 
-,range-filter {
+.range-filter {
     width: 240px;
     margin: 50px auto;
 }
@@ -579,13 +666,10 @@ body {
     white-space: nowrap;
 }
 
-.catalog-content-left input,
-.catalog-content-left label {
-    display: inline-block;
-}
-
 .catalog-content-left label {
     width: 220px;
+    
+    
 }
 
 .catalog-btn {
@@ -604,17 +688,128 @@ body {
     border-radius: 2px;
 }
 
+input[type="radio"], 
+input[type="checkbox"] {
+    display: none;
+}
+
+
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+    
+input[type="radio"] +label::before {
+    content: "";
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin: 0 12px 0 0;
+    background-image: url("../img/radio-checkbox-sprite.png");
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin: 0 12px 0 0;
+    background-image: url("../img/radio-checkbox-sprite.png");
+    background-repeat: no-repeat;
+}
+
+input[type="radio"] + label::before {
+    background-position: -38px 0;
+    opacity: 0.4;
+}
+
+input[type="checkbox"] + label::before {
+    background-position: 0 0;
+    opacity: 0.4;
+}
+
+input[type="radio"]:checked + label::before {
+    background-position: -38px -38px;
+    opacity: 0.4;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: 0 -38px;
+    opacity: 0.4;
+}
 
 .catalog-content-right {
     width: 820px;
     float: left;
+    margin: 20px auto;
 }
 
-.filter a {
+.filter-left {
+    float: left;
+    width: 140px;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.filter-right {
+    float: right;
+    width: 420px;
+    text-align: right;
+    
+}
+
+.filter-right a {
     display: inline-block;
     font-size: 14px;
     line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
     font-family: "Roboto", sans-serif;
+    color: #cccccc;
+    cursor: pointer;
+    margin-left: 27px;
+}
+
+.filter-right a:hover {
+    color: #999999;
+}
+
+.filter-right a:active {
+    color: #000000;
+}
+
+.filter-increase {
+   font-size: 0;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+}
+
+.filter-decrease {
+    font-size: 0;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #cccccc;
+}
+
+.filter-increase:hover,
+.filter-decrease:hover {
+    color: #999999;
+}
+
+.filter-increase:active,
+.filter-decrease:active {
+    color: #000000;
 }
 
 .gallery {
@@ -623,6 +818,7 @@ body {
 
 .gallery-item {
     display: inline-block;
+    position: relative;
     width: 360px;
     vertical-align: middle;
     margin-right: 15px;
@@ -630,6 +826,30 @@ body {
 
 .gallery-item:nth-child(2n) {
     margin-right: 0;
+}
+
+.gallery-item-info {
+    position: absolute;
+    top: 390px;
+    width: 360px;
+    height: 215px;
+    background: #eeeeee;
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+.gallery-item-info:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.gallery-item-info p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
 }
 
 .pagination {
@@ -652,11 +872,21 @@ body {
     background-color: #eeeeee;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .pagination-btn:last-child {
     width: 260px;
-    
+}
+
+.pagination-btn:hover {
+    background-color: #dfdfdf
+}
+
+.pagination-btn:active {
+    background-color: #dfdfdf;
+    color: #a6a6a6;
+    box-shadow: inset 0 -2px 0 0 #a6a6a6;
 }
 
 
