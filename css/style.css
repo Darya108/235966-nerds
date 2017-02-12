@@ -83,8 +83,6 @@ body {
 
 .main-navigation .active {
     position: relative;
-    background-color: none;
-    
 }
 
 .main-navigation .active::after {
@@ -130,6 +128,24 @@ body {
     color: #fb565a;
 }
 
+.basket:active {
+    color: #a6a6a6;
+}
+
+.user-block .active {
+    position: relative;
+}
+
+.user-block .active::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    left: 5px;
+    height: 2px;
+    background-color: #fb565a; 
+}
+
 
 .btn {
     display: inline-block;
@@ -159,8 +175,7 @@ body {
     box-shadow: inset 0 -2px 0 0 #c13135;
 }
 
-/* ВОПРОС: полоску сверху в активном состоянии сделать 
-через box-shadow или же с помощью border-top? */
+
 
 .slider {
     position: relative;
@@ -606,6 +621,7 @@ body {
     float: left;
     margin-right: 100px;
     
+    
 }
 
 .range-filter {
@@ -678,10 +694,12 @@ body {
     width: 220px;
     
     
+    
 }
 
 .catalog-btn {
     display: inline-block;
+    margin-top: 40px;
     padding: 15px 80px;
     width: 240px;
     font-size: 16px;
@@ -694,28 +712,49 @@ body {
     background-color: #eeeeee;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+.catalog-btn:hover {
+    background-color: #dfdfdf
+}
+
+.catalog-btn:active {
+    background-color: #dfdfdf;
+    color: #a6a6a6;
+    box-shadow: inset 0 2px 0 0 #bfbfbf; 
 }
 
 input[type="radio"], 
 input[type="checkbox"] {
     display: none;
+    
+    
 }
 
 
 input[type="checkbox"] + label, 
 input[type="radio"] + label {
     display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    padding-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
+    color: #283136;
     cursor: pointer;
+    
 }
+
     
 input[type="radio"] +label::before {
     content: "";
     display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: -8px;
     height: 32px;
     width: 32px;
-    margin: 0 12px 0 0;
     background-image: url("../img/radio-checkbox-sprite.png");
     background-repeat: no-repeat;
 }
@@ -723,15 +762,18 @@ input[type="radio"] +label::before {
 input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: -7px;
     height: 32px;
     width: 32px;
-    margin: 0 12px 0 0;
     background-image: url("../img/radio-checkbox-sprite.png");
     background-repeat: no-repeat;
 }
 
+
 input[type="radio"] + label::before {
-    background-position: -38px 0;
+    background-position: -70px 0;
     opacity: 0.4;
 }
 
@@ -741,14 +783,34 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="radio"]:checked + label::before {
-    background-position: -38px -38px;
+    background-position: -105px 0;
     opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::before {
-    background-position: 0 -38px;
+    background-position: -35px 0;
     opacity: 0.4;
 }
+
+input[type="radio"] + label:hover::before,
+input[type="checkbox"] + label:hover::before {
+    opacity: 1;
+}
+
+.catalog-content-left label:hover {
+    color: #000000;
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::before {
+    opacity: 0.1;
+}
+
+/* Как задать состояние label при disabled */
+
+
+
+
 
 .catalog-content-right {
     width: 820px;
@@ -778,6 +840,7 @@ input[type="checkbox"]:checked + label::before {
     line-height: 18px;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: "Roboto", sans-serif;
     color: #cccccc;
     cursor: pointer;
@@ -810,14 +873,26 @@ input[type="checkbox"]:checked + label::before {
 	border-top: 10px solid #cccccc;
 }
 
-.filter-increase:hover,
-.filter-decrease:hover {
-    color: #999999;
+.filter-increase:hover {
+    border-bottom-color: #999999;
 }
 
-.filter-increase:active,
+.filter-increase:active {
+    border-bottom-color: #000000;
+}
+
+.filter-decrease:hover {
+    border-top-color: #999999;
+}
+
 .filter-decrease:active {
+    border-top-color: #000000;
+}
+
+.filter-right .current {
     color: #000000;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
 }
 
 .gallery {
@@ -849,9 +924,25 @@ input[type="checkbox"]:checked + label::before {
     opacity: 0;
 }
 
-.gallery-item-info:hover {
+.browser-img {
+    position: absolute;
+    top: 1px;
+    display: none;
+}
+
+.gallery-item:hover .gallery-item-info {
     position: absolute;
     opacity: 1;
+    
+}
+
+.gallery-item:hover .browser-img {
+    display: block;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
 }
 
 .gallery-item-info p {
@@ -868,8 +959,7 @@ input[type="checkbox"]:checked + label::before {
 .pagination-btn {
     display: inline-block;
     margin-right: 10px;
-    padding: 20px;
-     width: 50px;
+    padding: 17px;
     height: 50px;
     font-size: 16px;
     line-height: 18px;
