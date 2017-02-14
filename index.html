@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
-          <div class="header-top">
           <div class="container clearfix">
               <div class="index-logo">
                   <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
@@ -15,7 +16,7 @@
               <nav class="main-navigation">
                   <ul>
                       <li><a href="#">Студия</a></li>
-                      <li><a href="#">Клиенты</a></li>
+                      <li><a class="active">Клиенты</a></li>
                       <li><a href="#">Магазин</a></li>
                       <li><a href="#">Контакты</a></li>
                   </ul>
@@ -24,66 +25,88 @@
                   <a class="basket" href="#">Корзина</a>
               </div>
               </div>
-              <div class="header-bottom">
-                  <div class="container clearfix">
-               <div class="promo">
-                   <div class="promo-description">
-              <h1>Долго, дорого, скрупулезно.</h1>
-              <p>Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.</p>
-              <a class="btn" href="#">Узнать больше</a>
-                   </div>
-              <div class="slider">
-                   <img src="img/slide1.png" alt="">
-                   <button class="slider-btn" type="button"></button>
-                   <button class="slider-btn" type="button"></button>
-                   <button class="slider-btn" type="button"></button>
-              </div>
-            </div>
-            </div>
-          </div>
-          </div>
+         
+          <div class="slider">
+                    <div class="slider-controls">
+                    <i class="active"></i> 
+                    <i></i> 
+                    <i></i>
+                    </div>
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="slide-text">
+                                <div class="slide-title">
+                                    Долго, дорого, скрупулезно.
+                                </div>
+                                <p>Математически выверенный дизайн<br>
+                                для вашего сайта или мобильного приложения.</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-text">
+                                <div class="slide-title">
+                                    Любим математику как никто другой
+                                </div>
+                                <p>Никакого креатива, только математические формулы<br>
+                                для расчета идеальных пропорций.</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-text">
+                                <div class="slide-title">
+                                    Только ночь, только хардкор
+                                </div>
+                                <p>Работать днем, как все? Мы против этого.<br>
+                                Ближе к полуночи работа только начинается.</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
       </header>
       <main>
           <div class="container clearfix">
-          <section class="features">
+          <section class="features clearfix">
               <div class="features-item">
                   <img src="img/illustration-1.png">
-                  <h2>Веб-сайты</h2>
+                  <h2 class="features-name">Веб-сайты</h2>
                   <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
                   <button class="btn" type="submit">Заказать</button>
               </div>
               <div class="features-item">
                   <img src="img/illustration-2.png">
-                  <h2>Приложения</h2>
+                  <h2 class="features-name">Приложения</h2>
                   <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                  <button class="btn" type="submit">Заказать</button>
+                  <button class="btn btn-green" type="submit">Заказать</button>
               </div>
               <div class="features-item">
                   <img src="img/illustration-3.png">
-                  <h2>Презентации</h2>
+                  <h2 class="features-name">Презентации</h2>
                   <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                  <button class="btn" type="submit">Заказать</button>
+                  <button class="btn btn-yellow" type="submit">Заказать</button>
               </div>
               
           </section> 
-          <section class="index-content">
+          <section class="index-content clearfix">
               <div class="index-content-left">
-                  <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b></p>
+                  <p><b class="about-us">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b></p>
                   <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                  <h3>Выполняем заказы на разработку:</h3>
+                  <h3 class="content-title">Выполняем заказы на разработку:</h3>
                   <ul>
-                      <li>Веб-сайтов любой сложности</li>
-                      <li>Мобильных приложений для iOS и Андроид</li>
-                      <li>Слайдшоу и видео для корпоративных презентаций</li>
+                      <li class="service">Веб-сайтов любой сложности</li>
+                      <li class="service">Мобильных приложений для iOS и Андроид</li>
+                      <li class="service">Слайдшоу и видео для корпоративных презентаций</li>
                   </ul>
               </div>
               <div class="index-content-right">
                   <img class="content-logo" src="img/nerds-illustration.png" width="360" height="208" alt="">
-                  <h3>С 2004 года мы любим точность во всем:</h3>
-                  <table>
+                  <h3 class="content-title">С 2004 года мы любим точность во всем:</h3>
+                  <table class="about-us-table">
                       <tr>
-                          <td>146%</td><td>100%</td><td>50%</td>
+                          <th>146<sup>%</sup></th><th>100<sup>%</sup></th><th>50<sup>%</sup></th>
                       </tr>
                       <tr>
                           <td>Уровени самоотдачи</td>
@@ -93,21 +116,20 @@
                   </table>
               </div>
           </section>
-          <section class="index-content">
+          <section class="partners-list clearfix">
                <ul class="partners">
-                       <li><a href><img src="img/logo-1.png">HTML Academy</a></li>
-                       <li><a href><img src="img/logo-2.png">Barbershop Borodinsky</a></li>
-                       <li><a href><img src="img/logo-3.png">Pink</a></li>
-                       <li><a href><img src="img/logo-4.png">Mishka</a></li>
+                       <li><a href=""><img src="img/logo-1.png">HTML Academy</a></li>
+                       <li><a href=""><img src="img/logo-2.png">Barbershop Borodinsky</a></li>
+                       <li><a href=""><img src="img/logo-3.png">Pink</a></li>
+                       <li><a href=""><img src="img/logo-4.png">Mishka</a></li>
                    </ul>
           </section>
           </div>
       </main>
       <footer class="main-footer">
-          <div class="container clearfix">
           <section class="contacts">
-              <img class="contacts-map" src="img/map.png" alt="">
-              <figure>
+             <img class="contacts-map" src="img/map.png" alt=""> 
+              <figure class="address">
                   <b>NЁRDS DESIGN STUDIO</b>
                   <p>191186, Санкт-Петербург,<br>
                   ул.Б.Конюшенная, д.19/8</p>
@@ -115,18 +137,25 @@
                   <a class="btn" href="#">Напишите нам</a>
               </figure>
           </section>
+          
+          <div class="container clearfix">
           <section class="footer-social">
               <div class="footer-social-left">
               <a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
-              <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
-              <a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+              <a class="social-btn social-btn-fb" href="https://facebook.com">Facebook</a>
+              <a class="social-btn social-btn-inst" href="https://instagram.com">Instagram</a>
               </div>
               <div class="footer-social-right">
-              <b>Давайте дружить, это выгодно!</b>
+              <b class="call-to-action">Давайте дружить, это выгодно!</b>
               <p>Скидка 10% для друзей из социальных сетей.</p>
               </div>
           </section>
           </div>
       </footer>
+      <!--
+      <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть"></button>
+      </div>
+       -->
     </body>
 </html>
