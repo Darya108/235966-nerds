@@ -74,19 +74,19 @@
                   <img src="img/illustration-1.png">
                   <h2 class="features-name">Веб-сайты</h2>
                   <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-                  <button class="btn" type="submit">Заказать</button>
+                  <a class="btn" href="#">Заказать</a>
               </div>
               <div class="features-item">
                   <img src="img/illustration-2.png">
                   <h2 class="features-name">Приложения</h2>
                   <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                  <button class="btn btn-green" type="submit">Заказать</button>
+                  <a class="btn btn-green" href="#">Заказать</a>
               </div>
               <div class="features-item">
                   <img src="img/illustration-3.png">
                   <h2 class="features-name">Презентации</h2>
                   <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                  <button class="btn btn-yellow" type="submit">Заказать</button>
+                  <a class="btn btn-yellow" href="#">Заказать</a>
               </div>
               
           </section> 
@@ -129,6 +129,7 @@
       <footer class="main-footer">
           <section class="contacts">
              <img class="contacts-map" src="img/map.png" alt=""> 
+              <div class="container clearfix">
               <figure class="address">
                   <b>NЁRDS DESIGN STUDIO</b>
                   <p>191186, Санкт-Петербург,<br>
@@ -136,6 +137,7 @@
                   <p>тел. +7(812)275-75-75</p>
                   <a class="btn" href="#">Напишите нам</a>
               </figure>
+              </div>
           </section>
           
           <div class="container clearfix">
@@ -152,10 +154,27 @@
           </section>
           </div>
       </footer>
-      <!--
+      
       <div class="modal-content">
           <button class="modal-content-close" type="button" title="Закрыть"></button>
+          <h2 class="modal-content-title">Напишите нам</h2>
+          <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="write-us-left">
+              <label for="name">Ваше имя:</label><br>
+            <input class="name-form" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+              </div>
+              <div class="write-us-right">
+              <label for="e-mail">Ваш e-mail:</label><br>
+            <input class="email-form" type="email" name="email" id="e-mail" placeholder="Для отправки ответа" required>
+              </div>
+              <p><b class="label-style">Текст письма:</b></p>
+            <textarea name="message" id="messagefield"  placeholder="В свободной форме" required></textarea>
+            <button class="btn" type="submit" value="Отправить">Отправить</button>
+              
+        
+          </form>
+          
       </div>
-       -->
+       
     </body>
 </html>
