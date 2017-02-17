@@ -747,12 +747,6 @@ body {
 
 
 
- 
-
-
-
-
-
 
 /* Каталог */
 
@@ -1180,5 +1174,7 @@ input[type="checkbox"]:disabled + label::before {
     padding: 15px 18px;
 }
 
+
+/* *** */
 
 
