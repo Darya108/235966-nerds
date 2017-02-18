@@ -852,7 +852,8 @@ body {
 
 .range-filter {
     width: 260px;
-    margin: 50px auto;
+    margin: 47px auto;
+    margin-bottom: 54px;
 }
 
 .range-controls {
@@ -890,7 +891,7 @@ body {
 }
 
 .range-controls .max-toggle {
-    left: 155px;
+    left: 160px;
 }
 
 .range-text {
@@ -907,13 +908,14 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    vertical-align: middle;
     text-align: center;
     color: #283136;
     border-radius: 3px;
 }
 
 .price-controls .min-price {
-    margin-right: 30px;
+    margin-right: 33px;
 }
 
 .price-controls {
@@ -961,9 +963,10 @@ input[type="checkbox"] + label,
 input[type="radio"] + label {
     display: inline-block;
     position: relative;
-    margin-left: 35px;
-    padding-bottom: 14px;
+    margin-left: 37px;
+    padding-bottom: 15px;
     font-size: 16px;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
     line-height: 20px;
     color: #283136;
@@ -987,7 +990,7 @@ input[type="checkbox"] + label::before {
     display: inline-block;
     position: absolute;
     left: -40px;
-    top: -7px;
+    top: -6px;
     height: 32px;
     width: 32px;
     background-image: url("../img/radio-checkbox-sprite.png");
@@ -1039,7 +1042,12 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .features-choise {
-    margin-bottom: 2px;
+    margin-bottom: -4px;
+}
+
+.grid-choise .catalog-content-title,
+.features-choise .catalog-content-title {
+    margin-bottom: 10px;
 }
 
 .catalog-content-right {
@@ -1083,11 +1091,11 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .filter-right a:nth-child(3) {
-    margin-right: 43px;
+    margin-right: 35px;
 }
 
 .filter-right a:nth-child(4) {
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .filter-right a:last-child {
