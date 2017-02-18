@@ -3,7 +3,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
     background-color: #ffffff;    
 }
@@ -25,6 +25,7 @@ body {
     padding-top: 40px;
     color: #000000;
     background-color: #eeeeee;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .index-logo {
@@ -146,14 +147,13 @@ body {
     background-color: #fb565a; 
 }
 
-
 .btn {
     display: inline-block;
     padding: 16px 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     vertical-align: top;
     text-align: center;
     color: #ffffff;
@@ -180,6 +180,7 @@ body {
     width: 1160px;
     height: 415px;
     margin: 0 auto;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .slider-controls {
@@ -246,7 +247,7 @@ body {
     padding: 16px 0;
     margin-top: 40px;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
@@ -294,6 +295,7 @@ body {
 
 .features {
     margin-bottom: 70px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .features-item {
@@ -357,6 +359,7 @@ body {
     padding-bottom: 36px;
     margin-bottom: 20px;
     margin-top: 82px;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
     background: url("../img/divide.png") no-repeat top,
         url("../img/divide.png") no-repeat bottom;
@@ -526,11 +529,16 @@ body {
     position: relative;
 }
 
+.main-footer {
+    margin-bottom: 70px;
+    font-family: "Roboto", "Arial", sans-serif;
+}  
+
 .contacts {
+    position: relative;
     margin-bottom: 70px;
     padding-top: 5px;
     height: 416px;
-    position: relative;
 }
 
 .contacts-map {
@@ -586,7 +594,7 @@ body {
     height: 80px;
     margin-right: 7px;
     font-size: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     background: url("../img/social-sprite.png") no-repeat;
     background-color: #e1e1e1;
     vertical-align: middle;
@@ -612,10 +620,6 @@ body {
 
 .social-btn-inst {
     background-position: -152px 28px; 
-}
-
-.main-footer {
-  margin-bottom: 70px;  
 }
 
 .footer-social-right {
@@ -655,6 +659,7 @@ body {
     transform: translate(-50%, 0);
     width: 800px;
     padding: 30px 90px 50px 90px;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
     background-color: #ffffff;
     z-index: 1000;
@@ -707,6 +712,7 @@ body {
     font-size: 45px;
     font-weight: 600;
     line-height: 45px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .modal-content label {
@@ -726,6 +732,10 @@ body {
     font-size: 18px;
 }
 
+write-us-form {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
 .write-us-left,
 .write-us-right {
     display: inline-block;
@@ -738,13 +748,11 @@ body {
 .write-us-left input[type="text"],
 .write-us-left label {
     display: block;
-    
 }
 
 .write-us-right input[type="email"],
 .write-us-right label {
     display: block;
-    
 }
 
 .write-us-form input[type="text"],
@@ -768,7 +776,6 @@ body {
     width: 765px;
     height: 120px;
     }
-
 
 .write-us-form input[type="text"]:hover,
 .write-us-form input[type="email"]:hover {
@@ -812,6 +819,7 @@ body {
 
 .catalog-header {
     margin-bottom: -35px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .catalog-name {
@@ -823,7 +831,7 @@ body {
 .catalog-title {
     padding-top: 10px;
     font-size: 55px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     line-height: 55px;
     text-align: center;
 }
@@ -831,11 +839,12 @@ body {
 .catalog-content {
     margin-top: -12px;
     margin-bottom: 50px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .catalog-content-title {
     font-size: 18px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -848,6 +857,7 @@ body {
     float: left;
     margin-right: 90px;
     margin-top: 3px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .range-filter {
@@ -896,6 +906,7 @@ body {
 
 .range-text {
     text-transform: uppercase;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .price-controls input {
@@ -905,7 +916,7 @@ body {
     border: none;
     background: #f1f1f1;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-style: normal;
     vertical-align: middle;
@@ -934,7 +945,7 @@ body {
     font-size: 16px;
     line-height: 18px;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -967,7 +978,7 @@ input[type="radio"] + label {
     padding-bottom: 15px;
     font-size: 16px;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     line-height: 20px;
     color: #283136;
     cursor: pointer;
@@ -1054,6 +1065,7 @@ input[type="checkbox"]:disabled + label::before {
     float: left;
     width: 810px;
     margin: 20px auto;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .catalog-content-right .catalog-content-title {
@@ -1084,7 +1096,7 @@ input[type="checkbox"]:disabled + label::before {
     text-transform: uppercase;
     text-decoration: none;
     text-align: justify;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #cccccc;
     cursor: pointer;
     margin-right: 23px;
@@ -1178,6 +1190,7 @@ input[type="checkbox"]:disabled + label::before {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
+    font-family: "Roboto", "Arial", sans-serif;
     opacity: 0;
 }
 
@@ -1226,7 +1239,7 @@ input[type="checkbox"]:disabled + label::before {
     font-size: 16px;
     line-height: 18px;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     text-transform: uppercase;
     color: #000000;
     background-color: #eeeeee;
