@@ -180,7 +180,6 @@ body {
     width: 1160px;
     height: 415px;
     margin: 0 auto;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .slider-controls {
@@ -247,7 +246,6 @@ body {
     padding: 16px 0;
     margin-top: 40px;
     font-size: 16px;
-    font-family: "Roboto", "Arial", sans-serif;
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
@@ -295,7 +293,6 @@ body {
 
 .features {
     margin-bottom: 70px;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .features-item {
@@ -359,7 +356,6 @@ body {
     padding-bottom: 36px;
     margin-bottom: 20px;
     margin-top: 82px;
-    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
     background: url("../img/divide.png") no-repeat top,
         url("../img/divide.png") no-repeat bottom;
@@ -712,7 +708,6 @@ body {
     font-size: 45px;
     font-weight: 600;
     line-height: 45px;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .modal-content label {
@@ -831,7 +826,6 @@ write-us-form {
 .catalog-title {
     padding-top: 10px;
     font-size: 55px;
-    font-family: "Roboto", "Arial", sans-serif;
     line-height: 55px;
     text-align: center;
 }
@@ -844,7 +838,6 @@ write-us-form {
 
 .catalog-content-title {
     font-size: 18px;
-    font-family: "Roboto", "Arial", sans-serif;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -857,7 +850,6 @@ write-us-form {
     float: left;
     margin-right: 90px;
     margin-top: 3px;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .range-filter {
@@ -1065,7 +1057,6 @@ input[type="checkbox"]:disabled + label::before {
     float: left;
     width: 810px;
     margin: 20px auto;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .catalog-content-right .catalog-content-title {
@@ -1190,7 +1181,6 @@ input[type="checkbox"]:disabled + label::before {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
-    font-family: "Roboto", "Arial", sans-serif;
     opacity: 0;
 }
 
